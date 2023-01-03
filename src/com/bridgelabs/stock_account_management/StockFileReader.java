@@ -12,7 +12,9 @@ public class StockFileReader {
     ArrayList<Integer> numberOfShare = new ArrayList<>(); //number of shares left in that company/stock out of hundred
     ArrayList<Integer> sharePrice = new ArrayList<>(); //share price of the company/stock
     String[] stockArray = new String[3];
-    public void read() throws FileNotFoundException {
+    public void read() throws FileNotFoundException
+    {
+        //this file class will help to take the path of the file
         File file = new File("C:\\Users\\Sourav Prasanna\\IdeaProjects\\Day11-12-OOPS-Programs\\src\\com\\bridgelabs\\stock_account_management\\StockPortfolio");
         Scanner sc = new Scanner(file); //this scanner will only take the input from this file path
         while(sc.hasNextLine()) {
