@@ -13,6 +13,7 @@ public class StockPortfolio extends StockFileReader {
     public static void uc1_stockReport() throws FileNotFoundException {
         StockPortfolio stockPortfolio = new StockPortfolio();
         Scanner sc = new Scanner(System.in);
+        System.out.println("Available stocks are Reliance, Tata, Infosys, Zoho and HCL");
         System.out.println("Enter the name of the stock which you would like to see");
         searchByName = sc.next(); //in order to see the report user need to search the stock name
         System.out.println("Enter the number of stocks");
@@ -27,10 +28,6 @@ public class StockPortfolio extends StockFileReader {
                 value = numberOfStocks * stocks.get(i).getSharePrice(); //calculating value of the stock based on number of stocks entered by user
                 System.out.println(stocks.get(i)+"\nStock Value of "+numberOfStocks+" stock: "+value); //printing stock report
             }
-
         }
-    }
-    public static void main(String[] args) throws FileNotFoundException {
-        StockPortfolio.uc1_stockReport();
     }
 }
