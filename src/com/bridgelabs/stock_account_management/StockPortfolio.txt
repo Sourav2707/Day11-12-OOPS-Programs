@@ -1,0 +1,5 @@
+Reliance,25,250
+Tata,22,200
+Infosys,18,180
+Zoho,15,150
+Hcl,12,120
