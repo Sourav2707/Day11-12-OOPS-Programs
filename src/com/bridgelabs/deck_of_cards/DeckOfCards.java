@@ -59,11 +59,4 @@ public class DeckOfCards {
         System.out.println("Player 3 have "+Arrays.toString(player3));
         System.out.println("Player 4 have "+Arrays.toString(player4));
     }
-
-    public static void main(String[] args) {
-        DeckOfCards deckOfCards = new DeckOfCards();
-        deckOfCards.initializingDeck();
-        deckOfCards.suffleDeck();
-        deckOfCards.distributeToPlayers();
-    }
 }
